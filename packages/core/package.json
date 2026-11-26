@@ -1,0 +1,22 @@
+{
+  "name": "@virun/core",
+  "version": "0.1.0",
+  "description": "virun tunnel client: expose a local port through a virun relay",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@virun/proto": "0.1.0",
+    "ws": "^8.18.0"
+  }
+}
